@@ -1,0 +1,78 @@
+<html>
+    <head>
+    </head>
+<body bgcolor="black">
+    <style>
+        .div1 {
+            width: 200px;
+            height: 200px;
+            background-color:orange;
+        }
+        .div2 {
+            width: 200px;
+            height: 200px;
+            background-color:white;  
+        }
+        
+        .text{
+            color:aqua;
+        }
+        </style>
+
+
+
+
+    <div class="div1"></div>
+
+    <button onclick="changecolor()">Click Here to Change Color</button>
+
+    <p>     </p>
+
+    <div class="div2"></div>
+
+    <button onclick="changesize()">Click Here to Change Size</button>
+
+    <p>     </p>
+
+    <P class="text">Click below to add img</P>
+
+    <button onclick="addimage()">
+
+        <img class="image" src=""width="200px"height="200px">
+
+    </button>
+
+    <p>     </p>
+
+    <P class="text">Click below to remove img</P>
+
+    
+    <button onclick="remove()">
+        <img class="removeimg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToIebsZD5iOb0OrAKN_5-uZhaabNh_UDj-Bg&usqp=CAU"width="200px"height="200px">
+    
+    </button>
+    
+    
+    <script>
+        
+
+        function changecolor()
+        {
+            document.querySelector(".div1").style.backgroundColor="red";
+        }
+        function changesize()
+        {
+            document.querySelector(".div2").style.width=400;
+        }
+        function addimage()
+        {
+            document.querySelector(".image").setAttribute("src","https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Flag_India.svg/383px-Flag_India.svg.png")
+        }
+        function remove()
+        {
+            document.querySelector(".removeimg").setAttribute("src","")
+        }
+    </script>
+
+</body>
+</html>
